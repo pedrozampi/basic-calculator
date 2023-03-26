@@ -1,15 +1,14 @@
-
 ### PT-BR
 # Calculadora de operações básicas.
 
-Algoritmo de cálculadora com as 3 contas básicas.
+Algoritmo de cálculadora com as 4 operações básicas.
 
 
 ### EN-US
 
 # Basic operations Calculator
 
-Calculator algorythm with the 3 basic operations.
+Calculator algorythm with the 4 basic operations.
 
 
 ## Autor/Author

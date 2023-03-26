@@ -13,6 +13,13 @@ void subtracao(){ //Função subtração
     scanf("%f %f", &a, &b);//Le os valores.
     printf("O resultado da subtração é:\n          %.2f\n\n",a - b);//Imprime o resultado da subtração.
 }
+void multiplicacao(){ //Função multiplicação.
+    float a,b; //Variaveis dos valores a serem operados.
+    printf("Multiplicação selecionada\nValores a serem multiplicados: \n");//Imprime que está procurando os valores a ler.
+    scanf("%f %f", &a, &b);//Le os valores.
+    printf("O resultado da subtração é:\n          %.2f\n\n",a * b);//Imprime o resultado da multiplicação.
+}
+
 
 void divisao(){//Função divisão.
     float a,b;//Variaveis dos valores a serem operados.
@@ -30,7 +37,7 @@ void menu() //Menu que imprime as operações disponiveis.
 {
     int op;//Operação a ser usado em valor int afim de ser usada no switch.
     while(op != 5){//Enquanto a operação for diferente do código de saida executar.
-        printf("Selecione a operação:\n1 - Soma\t2 - Subtração\t3 - Divisão\t5 - Sair\n"); //Imprime as operações disponiveis e seus valores.
+        printf("Selecione a operação:\n1 - Soma\t2 - Subtração\t3 - Multiplicação\t4 - Divisão\t5 - Sair\n"); //Imprime as operações disponiveis e seus valores.
         scanf("%d", &op);//Lê o codigo da operação.
         switch (op) //Switch com o código.
         {
@@ -41,9 +48,11 @@ void menu() //Menu que imprime as operações disponiveis.
                 subtracao(); //Chamada da função.
                 break;//Quebra.
             case 3://Caso 3 - Divisão.
-                divisao(); //Chamada da função.
+                multiplicacao(); //Chamada da função.
                 break; //Quebra.
-
+            case 4:
+                divisao();
+                break;
             case 5://Caso 5 - Encerrar a algoritmo.
                 printf("Encerrando.\n");//Imprime que está encerrando
                 exit(0);//Sái do algoritmo.
