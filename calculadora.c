@@ -47,12 +47,12 @@ void menu() //Menu que imprime as operações disponiveis.
             case 2: //Caso 2 - Subtração.
                 subtracao(); //Chamada da função.
                 break;//Quebra.
-            case 3://Caso 3 - Divisão.
+            case 3://Caso 3 - Multiplicação.
                 multiplicacao(); //Chamada da função.
                 break; //Quebra.
-            case 4:
-                divisao();
-                break;
+            case 4://Caso 4 - Divisão.
+                divisao();//Chamada da função.
+                break;//Quebra.
             case 5://Caso 5 - Encerrar a algoritmo.
                 printf("Encerrando.\n");//Imprime que está encerrando
                 exit(0);//Sái do algoritmo.
